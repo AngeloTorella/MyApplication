@@ -76,7 +76,6 @@ public class Tickets {
         usuario.setCapital(usuario.getCapital() - calcularExposure(cantidad,precioActual));
     }
 
-
     public void vender(int cantidad,Usuario usuario,double precioActual){
         //double precioActual = obtenerPrecio().doubleValue();
         eliminar(cantidad);
