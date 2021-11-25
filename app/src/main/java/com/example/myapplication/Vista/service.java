@@ -1,6 +1,6 @@
-package com.example.myapplication.interfaces;
+package com.example.myapplication.Vista;
 
-import com.example.myapplication.models.ApiRespuesta;
+import com.example.myapplication.modelo.ApiRespuesta;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -1,13 +1,13 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.example.myapplication.interfaces.service;
-import com.example.myapplication.models.ApiRespuesta;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.Vista.service;
+import com.example.myapplication.modelo.ApiRespuesta;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         texto=findViewById(R.id.textoprueba);
         market=findViewById(R.id.market);
         retrofit=new Retrofit.Builder().baseUrl("https://www.alphavantage.co/").addConverterFactory(GsonConverterFactory.create()).build();
-
         obtenerDatos();
     }
 
